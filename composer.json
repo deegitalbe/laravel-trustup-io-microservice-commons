@@ -1,12 +1,12 @@
 {
-    "name": "henrotaym/versioning-package-template",
-    "description": "Basic versioned php package.",
+    "name": "deegital/laravel-trustup-io-microservice-model",
+    "description": "A package to define microservice model.",
     "type": "library",
     "license": "MIT",
     "authors": [
         {
-            "name": "Mathieu Henrotay",
-            "email": "mathieu.henrotay@gmail.com"
+            "name": "Axel Marquet",
+            "email": "axel.marquet@trustup.be"
         }
     ],
     "require": {
@@ -18,18 +18,18 @@
     },
     "autoload": {
         "psr-4": {
-            "Henrotaym\\VersioningPackageTemplate\\": "src"
+            "Deegital\\LaravelTrustupIoMicroserviceModel\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Henrotaym\\VersioningPackageTemplate\\Tests\\": "tests"
+            "Deegital\\LaravelTrustupIoMicroserviceModel\\Tests\\": "tests"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Henrotaym\\VersioningPackageTemplate\\Providers\\VersioningPackageTemplateServiceProvider"
+                "Deegital\\LaravelTrustupIoMicroserviceModel\\Providers\\LaravelTrustupIoMicroserviceModelServiceProvider"
             ]
         }
     }

@@ -1,15 +1,15 @@
 <?php
-namespace Henrotaym\VersioningPackageTemplate\Tests;
+namespace Deegital\LaravelTrustupIoMicroserviceModel\Tests;
 
-use Henrotaym\VersioningPackageTemplate\VersioningPackageTemplate;
+use Deegital\LaravelTrustupIoMicroserviceModel\LaravelTrustupIoMicroserviceModel;
 use Henrotaym\LaravelPackageVersioning\Testing\VersionablePackageTestCase;
-use Henrotaym\VersioningPackageTemplate\Providers\VersioningPackageTemplateServiceProvider;
+use Deegital\LaravelTrustupIoMicroserviceModel\Providers\LaravelTrustupIoMicroserviceModelServiceProvider;
 
 class TestCase extends VersionablePackageTestCase
 {
     public static function getPackageClass(): string
     {
-        return VersioningPackageTemplate::class;
+        return LaravelTrustupIoMicroserviceModel::class;
     }
 
     public function getEnvironmentSetUp($app)
@@ -20,7 +20,7 @@ class TestCase extends VersionablePackageTestCase
     public function getServiceProviders(): array
     {
         return [
-            VersioningPackageTemplateServiceProvider::class
+            LaravelTrustupIoMicroserviceModelServiceProvider::class
         ];
     }
 
