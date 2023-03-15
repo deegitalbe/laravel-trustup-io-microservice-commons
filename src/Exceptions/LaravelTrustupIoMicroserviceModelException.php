@@ -4,7 +4,7 @@ namespace Deegital\LaravelTrustupIoMicroserviceModel\Exceptions;
 
 use Exception;
 
-class LaravalTrustupIoMicroserviceModelException extends Exception
+class LaravelTrustupIoMicroserviceModelException extends Exception
 {
     public static function noAppKey()
     {

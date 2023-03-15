@@ -2,7 +2,7 @@
 
 namespace Deegital\LaravelTrustupIoMicroserviceModel\Traits;
 
-use Deegital\LaravelTrustupIoMicroserviceModel\Exceptions\LaravalTrustupIoMicroserviceModelException;
+use Deegital\LaravelTrustupIoMicroserviceModel\Exceptions\LaravelTrustupIoMicroserviceModelException;
 use Deegital\LaravelTrustupIoMicroserviceModel\Facades\LaravelTrustupIoMicroserviceModelFacade;
 use Illuminate\Database\Eloquent\Relations\Relation;
 
@@ -12,7 +12,7 @@ trait IsTrustupIoMicroserviceModel
     {
         Relation::requireMorphMap();
 
-        return $this->getMorphType();
+        return $this->getMorphClass();
     }
 
     public function getTrustupIoModelId(): string
@@ -22,6 +22,6 @@ trait IsTrustupIoMicroserviceModel
 
     public function getTrustupIoAppKey(): string
     {
-        LaravelTrustupIoMicroserviceModelFacade::getConfig('app_key') ?? LaravalTrustupIoMicroserviceModelException::noAppKey();
+        return LaravelTrustupIoMicroserviceModelFacade::getConfig('app_key') ?? LaravelTrustupIoMicroserviceModelException::noAppKey();
     }
 }
